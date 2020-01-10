@@ -1,21 +1,45 @@
-.img-flex {
-  display: block;
-  width: 100%;
+html {
+  font-family: Georgia, serif;
+  color: #fff;
+  background-color: #495562;
 }
 
-.banner {
-  position: relative;
-  overflow: hidden;
-  max-height: 24em;
+h1 {
+  color: #fff;
 }
 
-.banner-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+p {
+  color: #fff;
+}
+
+.btn {
   color: #fff;
 }
 
 .btn-ghost {
   background-color: transparent;
+}
+
+.btn-ghost:hover {
+  color: #efefef;
+  border-color: #97a49b;
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    max-height: 500px;
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    background-image: linear-gradient(to top, rgba(73, 85, 98, .9), rgba(73, 85, 98, .5), rgba(73, 85, 98, .1));
+  }
+
 }
